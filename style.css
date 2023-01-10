@@ -1,9 +1,16 @@
 *{
 	box-sizing: border-box;
-	margin:0;
-	padding:0;
+	margin:0px;
+	padding:0px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	flex-wrap: nowrap;
 	font-family: "comic sans ms";
-	font-weight: 100%;
+}
+body{
+	margin:0px;
+	padding:0px;
+	width:100%;
 }
 
 h2{
@@ -11,16 +18,20 @@ h2{
 	margin-bottom: 40px;
 	text-align: center;
 }
+.row{
+	width: 100%
+}
 .desc1{
 	border: 3px solid black;
 	background-color: #00E8D9;
-	width: 96%;
+	width: 93%;
 	height: 140px;
 	margin: 15px 15px 15px 15px;
 	padding: 25px 25px 25px 25px;
-	overflow: hidden;
 	font-weight: bolder;
 	font-size: 15px;
+	margin-left:auto;
+	margin-right: auto;
 }
 
 @media (min-width: 992px)
@@ -28,10 +39,10 @@ h2{
 	.col-lg-4
 	{
 		float:left;
-
+		
 	}
 	.col-lg-4{
-		width: 33%;
+		width: 33.3%;
 	}
 	}
 @media (min-width: 768px) and (max-width: 991px)
@@ -39,6 +50,7 @@ h2{
 	.col-md-6,.col-md-12
 	{
 		float:left;
+
 	}
 	.col-md-6{
 		width: 50%;
@@ -49,31 +61,26 @@ h2{
 }
 @media (min-width: 0px) and (max-width: 767px)
 {
-	.col-sm-12
-	{
-		float:left;
-
-
-	}
 	.col-sm-12{
 		width: 100%;
 	}
 }
 .p1, .p2, .p3{
 	font-weight: bolder;
-	text-align: left;
 	position:absolute;
-	overflow: none;
 	float: right;
 	top:15px;
-	right: 3px;
+	right: 17px;
 	border:3px solid black;
+	margin-left:auto;
+	margin-right: auto;
 	width: 100px;
 	height:25px;
 	text-align: center;
 }
 .item1, .item2, .item3{
 	position: relative;
+	
 }
 .p1{
 	
